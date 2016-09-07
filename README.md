@@ -1,2 +1,2 @@
-# wonders-of-Sid-Meier-s-Civilization-V
+# wonders in SidMeier's Civilization V
 wonders gallery
