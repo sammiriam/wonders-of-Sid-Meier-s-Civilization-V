@@ -1,4 +1,4 @@
-h1,h2,h3,h4,h5,h6,body,ul,ol,li,p,form,fieldset,table,td,img,div,dl,dt,dd,input{margin: 0;padding: 0;border: 0;}
+*{margin: 0;padding: 0;border: 0;}
 body{
     background: #fff;
     color: #555;
@@ -10,10 +10,10 @@ body{
 /*包裹层*/
 .wrap{
     width: 100%;
-    height: 620px;
+    height: 600px;
     position: absolute;
     top: 50%;
-    margin-top: -310px;
+    margin-top: -300px;
     background: #333;
     overflow: hidden;
     -webkit-perspective: 800px;
@@ -35,7 +35,7 @@ body{
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
 }
-.photo .side{
+.photo .photo-wrap .side{
     width: 100%;
     height: 100%;
     background: #eee;
@@ -60,7 +60,7 @@ body{
 .photo .side-back .desc{
     font-size: 16px;
     line-height: 1.5em;
-    color: #777;
+    color: #666;
     padding: 15px;
 }
 .photo-center{
@@ -79,7 +79,6 @@ body{
     transition: all .6s;
     -webkit-transform-style: preserve-3d;
     -webkit-transform-origin: 0 50%;
-    -moz-transform-style: preserve-3d;
     -moz-transition-property: preserve-3d;
     -moz-transform-origin: 0 50%;
 }
@@ -96,17 +95,20 @@ body{
     -moz-backface-visibility: hidden;
 }
 .rotate-back .photo-wrap{
-    -webkit-transform: translate(260px, 0) rotateY(-180deg);
-    -moz-transform: translate(260px, 0) rotateY(-180deg);
+    -webkit-transform: translate(320px, 0) rotateY(-180deg);
+    -moz-transform: translate(320px, 0) rotateY(-180deg);
 }
-.rotate-back .photo-wrap{
-    -webkit-transform: translate(260px, 0) rotateY(-180deg);
+/*
+.rotate-front .photo-wrap{
+    -webkit-transform:  translate(260px, 0) rotateY(-180deg);
     -moz-transform: translate(260px, 0) rotateY(-180deg);
-}
+}*/
 /*控制按钮样式*/
 @font-face {
     font-family: "icons";
     src: url("icons.woff") format("woff");
+    font-weight: normal;
+    font-size: medium;
 }
 .nav{
     position: absolute;
